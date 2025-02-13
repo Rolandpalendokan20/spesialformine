@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I LOVE YOU</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="card.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <audio id="mp3" class="sembunyi" src="audio/love.mp3"></audio>
+    <div id="wallpaper" class="wallpaper"></div> <!-- Ganti img dengan div -->
+  <div class="content">
+    <h1></h1>
+  </div>
+
+  <div class="paper image">
+    <p>happy valentine's<br>day botol yakult🫶<br>btw ada pantunku<br>ubur-ubur, ikan lele<br>i love you Mine :'></p>
+  </div>
+  <div class="paper image">
+    <p>enam...<br>isinya namamu,<br>huruf besar semua..<br>"OKTAVINE<br>LANGGU"🫶</p>
+    <img src="gambar/gambar6.jpg" class="small-image" />
+  </div>
+  <div class="paper image">
+    <p>lima</p>
+    <img src="gambar/gambar5.jpg" class="small-image" />
+  </div>
+  <div class="paper image">
+    <p>empat</p>
+    <img src="gambar/gambar4.jpg" class="small-image" />
+  </div>
+  <div class="paper image">
+    <p>tiga</p>
+    <img src="gambar/gambar3.jpg" class="small-image" />
+  </div>
+  <div class="paper image">
+    <p>nomor dua..</p>
+    <img src="gambar/gambar2.jpg" class="small-image" />
+  </div>
+  <div class="paper image">
+    <p>kau adalah<br>orang favoritku,<br>nomor satu..</p>
+    <img src="gambar/gambar1.jpg" class="small-image" />
+  </div>
+
+  <!-- Play Button -->
+  <button id="playButton" class="play-button">Play Music</button>
+
+  <script src="card.js"></script>
+  <script>
+    // Play audio when the button is clicked
+    document.getElementById('playButton').addEventListener('click', function() {
+      const audio = document.getElementById('mp3');
+      audio.play(); // Play the audio
+    });
+  </script>
+</body>
+</html>
